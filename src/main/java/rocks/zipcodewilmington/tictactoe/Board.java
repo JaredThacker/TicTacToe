@@ -33,8 +33,8 @@ public class Board {
         return true;
     }
 
-    //0,2 1,1 ,2,0
     public Boolean checkDiagonal(char currentPlayer){
+
         int j = 2;
         Character[] topRightBottomLeft = new Character[3];
         Character[] topLeftBottomRight = new Character[3];
@@ -44,10 +44,6 @@ public class Board {
         }
         return checkRow(currentPlayer, topLeftBottomRight) || checkRow(currentPlayer, topRightBottomLeft);
     }
-
-    // left 00, 10, 20,
-    // midd 01, 11, 21,
-    // right 02, 12, 22
 
     public Boolean checkColumns(char currentPlayer){
 
